@@ -1,0 +1,18 @@
+{{#partial "content"}}
+    <h2 class="display-2">This is a simple Google Scraper</h2>
+    <h3 class="display-3">Please enter a Google query:</h3>
+    <form action="/results" method="post">
+    <div class="col-lg-6 offset-lg-2">
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search for..." name="querystring">
+            <span class="input-group-btn">
+                <button class="btn btn-secondary" type="submit">Search</button>
+            </span>
+        </div>
+    </form>
+    </div>
+
+
+{{/partial}}
+
+{{> base.hbs}}

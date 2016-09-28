@@ -1,0 +1,15 @@
+{{#partial "content"}}
+    <p>You query was: {{querystring}}</p>
+
+    <table>
+        {{#each results}}
+        <tr>
+            <td><a href="{{this}}">{{this}}</a></td>
+        </tr>
+        {{/each}}
+    </table>
+
+    <p><a href="/">Go back</a></p>
+{{/partial}}
+
+{{> base.hbs}}
